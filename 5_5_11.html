@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<style type="text/css">
+			.polig{
+				width:900px;
+				height:20px;
+			}
+		</style> 
+   </head>
+   <body>
+	<form>
+		<input id="input" type="text"/>
+		<div id="figure" class="polig"> </div> 
+	</form>
+	<script>
+	    colorfunc=function(){
+			var body = document.getElementById("figure");
+			body.style.backgroundColor = this.value;
+		}
+
+		var form=document.getElementById("input");
+		form.addEventListener('input', colorfunc);
+	</script>
+   </body>
+</html>
+
+
+
